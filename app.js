@@ -9,7 +9,7 @@ var routes = require('./routes/index');
 var todos = require('./routes/todos');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/todoApp', function(err) {
+mongoose.connect('mongodb://todo_usr:503consulting@ds011495.mlab.com:11495/todo_db', function(err) {
     if(err) {
         console.log('connection error', err);
     } else {
